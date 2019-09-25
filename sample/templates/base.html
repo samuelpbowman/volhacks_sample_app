@@ -1,20 +1,21 @@
-<body>
-    <div class="top-level">
-        <h1>Welcome</h1>
-        <nav class="top-bar">
-            <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Number</li>
-            </ul>
-        </nav>
-    </div>
-    <div class="content">
-        <h3>Sample Numbers App</h3>
-        {% block hello1 %}
-        {% endblock %}
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
 
-        {% block number %}
-        {% endblock %}
-    </div>
-</body>
+<div class="top-level">
+    <h1>Welcome</h1>
+    <nav class="top-bar">
+        <ul>
+            <li><a href="{% url 'index' %}">Home</a></li>
+            <li><a href="{% url 'about' %}">About</a></li>
+            <li><a href="{% url 'number' %}">Number</a></li>
+        </ul>
+    </nav>
+</div>
+<div class="content">
+    <h3>Sample Numbers App</h3>
+    {% block hello1 %}
+    {% endblock %}
+
+    {% block number %}
+    {% endblock %}
+</div>

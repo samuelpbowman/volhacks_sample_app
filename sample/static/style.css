@@ -1,7 +1,12 @@
+body {
+    font-family: sans-serif;
+}
+
 .top-level {
     background-color: black;
     color: white;
-    font-family: sans-serif;
+    padding-top: 3em;
+    padding-bottom: 3em;
 }
 
 .top-level h1 {
@@ -9,9 +14,29 @@
 }
 
 .top-bar > ul {
+    display: block;
     list-style-type: none;
 }
 
 .top-bar > ul li {
-    float: left
+    float: left;
+    margin-left: 0.5em;
+    padding-left: 0.5em;
+    margin-right: 0.5em;
+    padding-right: 0.5em;
+}
+
+.top-bar > ul li:hover {
+    float: left;
+    margin-left: 0.5em;
+    padding-left: 0.5em;
+    margin-right: 0.5em;
+    padding-right: 0.5em;
+    color: black;
+    background-color: white;
+}
+
+.top-bar a {
+    text-decoration: none;
+    color: white;
 }
