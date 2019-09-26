@@ -6,7 +6,7 @@ body {
     background-color: black;
     color: white;
     padding-top: 3em;
-    padding-bottom: 3em;
+    padding-bottom: 1em;
 }
 
 .top-level h1 {
@@ -14,24 +14,19 @@ body {
 }
 
 .top-bar > ul {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    border-top: 0.5px solid white;
     display: block;
     list-style-type: none;
 }
 
 .top-bar > ul li {
     float: left;
-    margin-left: 0.5em;
-    padding-left: 0.5em;
-    margin-right: 0.5em;
-    padding-right: 0.5em;
+    padding: 1em;
 }
 
-.top-bar > ul li:hover {
-    float: left;
-    margin-left: 0.5em;
-    padding-left: 0.5em;
-    margin-right: 0.5em;
-    padding-right: 0.5em;
+.top-bar > ul a:hover {
     color: black;
     background-color: white;
 }
