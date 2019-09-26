@@ -40,3 +40,7 @@ body {
     text-decoration: none;
     color: white;
 }
+
+.content {
+    margin-left: 4em;
+}
